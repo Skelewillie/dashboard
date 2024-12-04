@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Runic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: Roboto,sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 220px repeat(3,1fr);
+    min-width: 780px;
+    resize: both;
+    overflow: auto;
+    background-color: #E2E8F0;
+    
+}
+
+.sidebar{
+    display: grid;
+    grid-template-columns: 220px;
+    background-color: #1992D4;
+    grid-column: 1/2;
+    grid-row: 1/5;
+    color: white;
+    margin-right: 20px;
+}
+
+.sidebar .content{
+    display: grid;
+    grid-template-columns: 220px;
+    grid-template-rows: repeat(10, 40px);
+    grid-column: 1/2;
+}
+
+.header{
+    display: grid;
+    grid-template-rows: auto-fit auto-fit;
+    grid-row: 1/2;
+    grid-column: 2/5;
+}
+
+.header-item{
+    height: auto;
+}
+
+input{
+    padding: 0;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px,1fr));
+    grid-column: 3/4;
+    grid-row-start: 2;
+    border-radius: 20px;
+    align-items: center;
+    justify-items: center;
+    
+    
+}
+
+.project{
+    width: 275px;
+    height: 165px;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.misc{
+    display: grid;
+    grid-template-columns: 240px;
+    grid-column: 4/5;
+    grid-row-start: 3;
+    row-gap: 30px;
+    margin-left: 20px;
+}
+
+.announcements, .trending{
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.header-item{
+    background-color: white;
+}
